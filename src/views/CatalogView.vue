@@ -5,73 +5,73 @@ import { useCartStore, type Product } from '../stores/cart'
 
 const cartStore = useCartStore()
 
-const categories = ref(['Все', 'Ушки', 'Хвостики', 'Ошейники', 'Аксессуары'])
+const categories = ref(['Все', 'Поводки', 'Ошейники', 'Карабины', 'Амуниция'])
 const selectedCategory = ref('Все')
 
 const products = ref<Product[]>([
   {
     id: 1,
-    name: 'Кошачьи ушки "Нежность"',
-    price: 890,
-    image: '🎀',
-    category: 'Ушки',
-    description: 'Мягкие плюшевые ушки для создания милых образов',
+    name: 'Поводок кожаный "Классик"',
+    price: 1290,
+    image: '🦮',
+    category: 'Поводки',
+    description: 'Прочный кожаный поводок для средних и крупных пород',
   },
   {
     id: 2,
-    name: 'Лисий хвост "Рыжик"',
-    price: 1290,
-    image: '🦊',
-    category: 'Хвостики',
-    description: 'Пушистый хвост с проволокой для гибкости',
+    name: 'Ошейник с шипами "Защитник"',
+    price: 890,
+    image: '🐕',
+    category: 'Ошейники',
+    description: 'Стильный ошейник с декоративными шипами из нержавеющей стали',
   },
   {
     id: 3,
-    name: 'Ошейник с бантом',
-    price: 650,
-    image: '🎀',
-    category: 'Ошейники',
-    description: 'Элегантный ошейник с атласным бантом',
+    name: 'Карабин металлический усиленный',
+    price: 450,
+    image: '🔗',
+    category: 'Карабины',
+    description: 'Надёжный карабин с поворотным механизмом, выдерживает до 50 кг',
   },
   {
     id: 4,
-    name: 'Ушки лисы "Огонёк"',
-    price: 990,
-    image: '🦊',
-    category: 'Ушки',
-    description: 'Яркие оранжевые ушки с чёрными кончиками',
+    name: 'Поводок-рулетка "Комфорт"',
+    price: 1590,
+    image: '🐩',
+    category: 'Поводки',
+    description: 'Автоматический поводок длиной 5 метров с кнопкой фиксации',
   },
   {
     id: 5,
-    name: 'Котячий хвост "Тигрёнок"',
-    price: 1190,
-    image: '🐱',
-    category: 'Хвостики',
-    description: 'Полосатый хвост с мягкой набивкой',
+    name: 'Ошейник светоотражающий "Безопасность"',
+    price: 750,
+    image: '✨',
+    category: 'Ошейники',
+    description: 'Яркий ошейник со светоотражающими элементами для вечерних прогулок',
   },
   {
     id: 6,
-    name: 'Ошейник с колокольчиком',
-    price: 750,
-    image: '🔔',
-    category: 'Ошейники',
-    description: 'Милый ошейник с звонким колокольчиком',
+    name: 'Карабин-защёлка быстрый',
+    price: 350,
+    image: '⚡',
+    category: 'Карабины',
+    description: 'Удобная застёжка для быстрой смены поводка',
   },
   {
     id: 7,
-    name: 'Ушки зайца "Снежок"',
-    price: 890,
-    image: '🐰',
-    category: 'Ушки',
-    description: 'Белоснежные заячьи ушки с розовой подкладкой',
+    name: 'Шлейка анатомическая "Удобство"',
+    price: 1890,
+    image: '🐾',
+    category: 'Амуниция',
+    description: 'Мягкая шлейка с регулируемыми лямками для комфортной носки',
   },
   {
     id: 8,
-    name: 'Набор аксессуаров',
+    name: 'Набор "Щенок" (поводок + ошейник)',
     price: 1990,
-    image: '✨',
-    category: 'Аксессуары',
-    description: 'Полный набор для создания образа',
+    image: '🎁',
+    category: 'Амуниция',
+    description: 'Готовый комплект для маленьких щенков в стильном дизайне',
   },
 ])
 
@@ -142,8 +142,8 @@ function addToCart(product: Product, event: Event) {
 <template>
   <main class="catalog">
     <div class="catalog-header">
-      <h1 class="catalog-title">Каталог товаров</h1>
-      <p class="catalog-subtitle">Выберите идеальный аксессуар для вашего образа</p>
+      <h1 class="catalog-title">Каталог товаров для животных</h1>
+      <p class="catalog-subtitle">Качественная амуниция: поводки, ошейники, карабины и многое другое</p>
     </div>
 
     <!-- Category Filter -->

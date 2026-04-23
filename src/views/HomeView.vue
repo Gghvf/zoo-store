@@ -63,16 +63,16 @@ function animateFeatures() {
     <section class="hero">
       <div class="hero-content">
         <h1 class="hero-title">
-          Стильные аксессуары<br />
+          Качественная амуниция<br />
           <span class="highlight">для ваших питомцев</span>
         </h1>
         <p class="hero-subtitle">
-          Ушки, хвостики и другие милые вещицы для создания незабываемых образов
+          Поводки, ошейники, карабины и другие необходимые аксессуары для комфортных прогулок с собакой
         </p>
         <button class="hero-cta">Смотреть каталог</button>
       </div>
       <div class="hero-image-container">
-        <div class="hero-image">🐱</div>
+        <div class="hero-image">🐕</div>
       </div>
     </section>
 
@@ -81,24 +81,24 @@ function animateFeatures() {
       <h2 class="section-title">Почему выбирают нас</h2>
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon">✨</div>
-          <h3>Качество</h3>
-          <p>Только качественные материалы и внимательное отношение к деталям</p>
+          <div class="feature-icon">💪</div>
+          <h3>Прочность</h3>
+          <p>Надёжные материалы, проверенные временем и активными прогулками</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🎨</div>
           <h3>Дизайн</h3>
-          <p>Уникальные дизайны, созданные с любовью к животным</p>
+          <p>Стильные решения для современных собак и их хозяев</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🚚</div>
           <h3>Доставка</h3>
-          <p>Быстрая доставка по всей стране с отслеживанием</p>
+          <p>Быстрая доставка по всей стране с отслеживанием заказа</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">💝</div>
+          <div class="feature-icon">🐾</div>
           <h3>Забота</h3>
-          <p>Каждая покупка помогает приютам для животных</p>
+          <p>Каждая покупка помогает приютам для бездомных животных</p>
         </div>
       </div>
     </section>
@@ -108,9 +108,9 @@ function animateFeatures() {
       <h2 class="section-title">Популярные товары</h2>
       <div class="products-grid">
         <div class="product-card" v-for="i in 4" :key="i">
-          <div class="product-image">🎀</div>
-          <h3 class="product-name">Аксессуар {{ i }}</h3>
-          <p class="product-price">{{ i * 500 }} ₽</p>
+          <div class="product-image">{{ ['🦮', '🐕', '🔗', '🐾'][i - 1] }}</div>
+          <h3 class="product-name">{{ ['Поводок', 'Ошейник', 'Карабин', 'Шлейка'][i - 1] }}</h3>
+          <p class="product-price">{{ i * 450 }} ₽</p>
         </div>
       </div>
     </section>
