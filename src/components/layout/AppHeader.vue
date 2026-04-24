@@ -39,7 +39,11 @@ function navigateTo(path: string) {
   <header class="header">
     <div class="header-container">
       <div class="header-logo" @click="navigateTo('/')">
+<<<<<<< HEAD
         <span class="logo-text">🐾 Ushki</span>
+=======
+        <span class="logo-text">🐾 Ushki Clone</span>
+>>>>>>> b59afaa89e07548a42071155c857ab6f84ef020a
       </div>
 
       <nav class="header-nav" :class="{ open: isMenuOpen }">
